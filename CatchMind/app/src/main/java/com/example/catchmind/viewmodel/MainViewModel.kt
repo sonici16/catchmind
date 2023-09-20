@@ -15,7 +15,7 @@ class MainViewModel : ViewModel() {
     val gameStateLiveData: LiveData<GameState>
         get() = _gameStateLiveData
 
-    private var currentGameState: GameState = GameState.GUESSING
+    private var currentGameState: GameState = GameState.DRAWING
 
     init {
         // 초기 게임 데이터 설정
