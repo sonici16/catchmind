@@ -21,30 +21,30 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"/>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp" >
 
     <EditText
         android:id="@+id/drawingEditText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_weight="1"
         android:hint="Answer..."
-        android:singleLine="true"
-        android:layout_marginTop="16dp" />
+        android:singleLine="true" />
 
     <Button
         android:id="@+id/sendButton"
         android:layout_width="60dp"
         android:layout_height="30dp"
         android:textSize="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/drawingEditText"
-        app:layout_constraintBottom_toBottomOf="@id/drawingEditText"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
         android:text="send" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
